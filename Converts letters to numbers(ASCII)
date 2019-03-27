@@ -1,0 +1,19 @@
+//Exercise 4_9 Mackenzie Harwood
+//take ascii and convert to an integer
+import java.util.*;
+
+public class Exercise4_9MH
+
+{
+public static void main(String[] args)
+{
+      Scanner in = new Scanner(System.in);
+      System.out.print("Enter a letter "); 
+      //accpet input as a charater and cast as an integer
+         char letter = in.nextLine().charAt(0);
+         System.out.println("The ascii value of your letter is "+(int)letter);
+         
+              
+        
+}
+}
