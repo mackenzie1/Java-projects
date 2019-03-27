@@ -1,0 +1,59 @@
+//Exercise3_17 Mackenzie Harwood
+//Rock Paper Scissors
+import java.util.*;
+public class Exercise3_17MH
+{
+   public static void main(String[] args)
+   {
+   //Make rock paper scissors constants
+   final int ROCK = 0;
+   final int PAPER = 1;
+   final int SCISSORS = 2;
+     Random number = new Random();
+     
+      int computerHand = number.nextInt(3);      
+            
+      //take user input
+      Scanner in = new Scanner(System.in);
+      System.out.print("Pick a number 0,1,or 2"); 
+      //accpet input as an int variable named userHand 
+      int userHand = in.nextInt();
+      System.out.println("The computer hand is " + computerHand);
+
+      //begin switch statement
+      
+      switch (computerHand)
+      {
+         case ROCK: 
+            if (userHand == 0)
+               System.out.println("Its' a tie");
+            if (userHand == 1)
+               System.out.println("You win!");
+            else
+               System.out.println("You lose!");
+         break;
+         
+           case PAPER: 
+            if (userHand == 0)
+               System.out.println("You Lose!");
+            if (userHand == 1)
+               System.out.println("It's a tie");
+            else
+               System.out.println("You win!");
+
+           break;
+         
+          case SCISSORS:
+           if (userHand == 0)
+               System.out.println("You win!");
+            if (userHand == 1)
+               System.out.println("You lose!");
+            else
+               System.out.println("Its a tie!");
+
+           break;
+                }
+
+   }
+      
+}
