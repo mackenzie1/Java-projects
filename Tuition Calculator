@@ -1,0 +1,33 @@
+//Mackenzie Harwood Exercise 5_7
+//calculate rising tuition cost
+import java.util.*;
+import java.text.DecimalFormat;
+
+public class Exercise5_7MH{
+public static void main(String[] args){
+double tuition = 10000;
+int year = 1;
+double sum = 0;
+double sumSecond = 0;
+//create a for loop because we can start at year 1 and increment until year 14
+for (year = 1; year<= 14 ; year++){
+   //adjust tuition to increase by .05 every time the loop run (tuition must be a double)
+   tuition = tuition + (tuition * 0.0500);
+   //add a year every time the loop runs
+   year++;
+   //this will get the tuition for all years
+   sum = tuition + sum;
+   //have the tuition for every year print
+      System.out.println("Tuition in year " + year + " is " + tuition + " dollars");
+      //end the loop when we get to year 13 because we dont need tuition after the 13th year
+             }
+        //START FROM HERE WHEN WORKING
+         for (year = 14;year >= 10;year--){
+        sumSecond = tuition + sumSecond;
+                }
+
+               DecimalFormat fmt = new DecimalFormat ("0.##");
+                System.out.printf("Four years will cost " + fmt.format(sumSecond)+" dollars");
+
+              }
+}
